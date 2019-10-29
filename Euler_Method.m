@@ -1,5 +1,5 @@
-dy = @(x,y) x+y;
-
+#dy = @(x,y) x+y;
+dy=input('enter your function in formate of @(x,y) function\n');
 x0=input('enter intial value of x : ');
 y0=input('enter intial value of y or f(x)=y : ');
 h=input('enter the value of increamentor : ');
