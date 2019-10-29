@@ -1,4 +1,5 @@
-f = @(x,y) x*y;
+#f = @(x,y) x*y;
+f=input('enter your function in formate of @(x,y) function\n');
 x0=input('enter initial value of x : ');
 y0=input('enter initial value of y : ');
 h=input('enter interval gap h : ');
