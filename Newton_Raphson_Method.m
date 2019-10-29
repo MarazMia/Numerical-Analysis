@@ -1,12 +1,17 @@
-f = @(x) 2*x^2 - 5*x + 3;
-fp = @(x) 4*x - 5;
+#f = @(x) 2*x^2 - 5*x + 3;
+pkg load symbolic
+syms x;
+f=input('enter your function ');
+#fp = @(x) 4*x - 5;
+dif=diff(f);
+fp=function_handle(dif);
+f=function_handle(f);
 x1=input('enter the intial guess : ');
 tol=input('enter the tolerence value : ');
 if f(x1)==0
   fprintf('lower value is the root\n');
   return
 end
-
 i=1;
 fprintf('iterator      x0            value\n');
 while abs(f(x1))>=tol
