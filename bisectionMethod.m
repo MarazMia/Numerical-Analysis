@@ -1,5 +1,5 @@
 #f = @(x) 2*x^2 - 5*x + 3;
-f=input('enter your function in formate of @(x,y) function\n');
+f=input('enter your function ');
 low=input('enter the value of lower range : '); 
 high=input('enter the value of higher range : ');
 tol=input('enter the tolerence value : ');
